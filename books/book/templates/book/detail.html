@@ -1,0 +1,5 @@
+{% load static %}
+
+<h1>{{  book.title  }}</h1>
+<h2><a href = "{% url 'book:author_info' book.author.pk %}">{{  book.author  }}</a></h2>
+<img src = "{% static book.image %}" width="300px">
